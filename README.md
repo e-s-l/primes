@@ -1,25 +1,13 @@
-# Prime Number Finder in FORTRAN
+# Primes
 
-## About
+Sundry quick scripts pertaining to primes.
 
-How quick will it be?
+One quiet work day on a Artic research base, my collegue, a proud C++ programmer and Arch user, challenged me and another to a simple challenge:
+"Who can right the quickest script to count the number of primes less than X?"
+I generally kept my experience in FORTRAN developed by creating numerical simulations
+of in relativistic cosmology for my PhD research quiet, from a feeling of the
+daggyness of it. This changed that, "prime_finder" is the result. I've now added some additional short scripts, which are in some sense related.
 
-## Note
+## TODO
 
-OMP operative seems to slow down the operations. Maybe inappropriate place for it.
-
-## Set-up
-
-Compile using gfortran:
-```
-gfortran -O3 -march=native -mtune=native -funroll-loops -floop-block -fopenmp --free-form utilities.f90 prime_finder.f90
-```
-
-Run with:
-```
-time ./a.out
-```
-
-## Sources
-
-https://www.baeldung.com/cs/prime-number-algorithms
+document... comment...
