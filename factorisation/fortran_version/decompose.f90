@@ -158,7 +158,7 @@ program factorise
 
     function trial_division(x) result(d)
         implicit none
-        integer(big_int) :: x, d, i
+        integer(big_int) :: x, d, i     ! FIXME, intents here for dummy x
 
         if (x .le. 1) then
             d = 1
@@ -170,7 +170,7 @@ program factorise
             do while (i*i .le. x)
                 if (MODULO(x,i) == 0) then
                     d = i
-                    exit
+                    exit        ! this should be 'return' not 'exit'
                 end if
                 i = i + 2
             end do
